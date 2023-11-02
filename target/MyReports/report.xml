@@ -1,0 +1,457 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuite name="Cucumber" time="66.157" tests="61" skipped="0" failures="1" errors="0">
+<testcase classname="Feature to test GetStarted page" name="User launches Url" time="1.995">
+<system-out><![CDATA[
+Given User opens dsalgo application url.....................................passed
+When The user clicks the Get Started button.................................passed
+Then The user should be redirected to homepage..............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature to test Hompage" name="User launch home page of an dsalgo project" time="0.823">
+<system-out><![CDATA[
+Given the user opens DS Algo portal link....................................passed
+When the user clicks the "Get Started" button...............................passed
+Then the user should be redirected to homepage..............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature to test Hompage" name="User is on Homepage and click GetStarted link on Homepage without sign in - Example #1.1" time="0.977">
+<system-out><![CDATA[
+Given the User is on HomePage...............................................passed
+When the user clicks on Get Started link on homepage "Datastructures"  without login.passed
+Then the user get warning message "You are not logged in"...................passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature to test Hompage" name="User is on Homepage and click GetStarted link on Homepage without sign in - Example #1.2" time="1.167">
+<system-out><![CDATA[
+Given the User is on HomePage...............................................passed
+When the user clicks on Get Started link on homepage "Arrays"  without login.passed
+Then the user get warning message "You are not logged in"...................passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature to test Hompage" name="User is on Homepage and click GetStarted link on Homepage without sign in - Example #1.3" time="0.769">
+<system-out><![CDATA[
+Given the User is on HomePage...............................................passed
+When the user clicks on Get Started link on homepage "Linked List"  without login.passed
+Then the user get warning message "You are not logged in"...................passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature to test Hompage" name="User is on Homepage and click GetStarted link on Homepage without sign in - Example #1.4" time="0.704">
+<system-out><![CDATA[
+Given the User is on HomePage...............................................passed
+When the user clicks on Get Started link on homepage "Stack"  without login.passed
+Then the user get warning message "You are not logged in"...................passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature to test Hompage" name="User is on Homepage and click GetStarted link on Homepage without sign in - Example #1.5" time="0.741">
+<system-out><![CDATA[
+Given the User is on HomePage...............................................passed
+When the user clicks on Get Started link on homepage "Queue"  without login.passed
+Then the user get warning message "You are not logged in"...................passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature to test Hompage" name="User is on Homepage and click GetStarted link on Homepage without sign in - Example #1.6" time="0.916">
+<system-out><![CDATA[
+Given the User is on HomePage...............................................passed
+When the user clicks on Get Started link on homepage "Tree"  without login..passed
+Then the user get warning message "You are not logged in"...................passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature to test Hompage" name="User is on Homepage and click GetStarted link on Homepage without sign in - Example #1.7" time="0.755">
+<system-out><![CDATA[
+Given the User is on HomePage...............................................passed
+When the user clicks on Get Started link on homepage "Graph"  without login.passed
+Then the user get warning message "You are not logged in"...................passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature to test Hompage" name="User is on Homepage and click Dropdown on Homepage without sign in - Example #1.1" time="0.764">
+<system-out><![CDATA[
+Given the User is on HomePage...............................................passed
+When the user clicks on Dropdown on homepage "Arrays" without login.........passed
+Then the user get warning message "You are not logged in"...................passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature to test Hompage" name="User is on Homepage and click Dropdown on Homepage without sign in - Example #1.2" time="0.689">
+<system-out><![CDATA[
+Given the User is on HomePage...............................................passed
+When the user clicks on Dropdown on homepage "Linked List" without login....passed
+Then the user get warning message "You are not logged in"...................passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature to test Hompage" name="User is on Homepage and click Dropdown on Homepage without sign in - Example #1.3" time="0.664">
+<system-out><![CDATA[
+Given the User is on HomePage...............................................passed
+When the user clicks on Dropdown on homepage "Stack" without login..........passed
+Then the user get warning message "You are not logged in"...................passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature to test Hompage" name="User is on Homepage and click Dropdown on Homepage without sign in - Example #1.4" time="0.678">
+<system-out><![CDATA[
+Given the User is on HomePage...............................................passed
+When the user clicks on Dropdown on homepage "Queue" without login..........passed
+Then the user get warning message "You are not logged in"...................passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature to test Hompage" name="User is on Homepage and click Dropdown on Homepage without sign in - Example #1.5" time="0.706">
+<system-out><![CDATA[
+Given the User is on HomePage...............................................passed
+When the user clicks on Dropdown on homepage "Tree" without login...........passed
+Then the user get warning message "You are not logged in"...................passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature to test Hompage" name="User is on Homepage and click Dropdown on Homepage without sign in - Example #1.6" time="0.685">
+<system-out><![CDATA[
+Given the User is on HomePage...............................................passed
+When the user clicks on Dropdown on homepage "Graph" without login..........passed
+Then the user get warning message "You are not logged in"...................passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature to test Hompage" name="User is going into RegisterPage" time="0.538">
+<system-out><![CDATA[
+Given the User is on HomePage...............................................passed
+When the user clicks on RegisterLink........................................passed
+Then the user landsOn Register Page.........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature to test Hompage" name="User is going into SigninPage" time="0.57">
+<system-out><![CDATA[
+Given the User is on HomePage...............................................passed
+When the user clicks on Sign in link after getting the not logged in message.passed
+Then the user lands on loginPage............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature to test Hompage" name="User logging into Homepage after signing in successfully - Example #1.1" time="2.394">
+<system-out><![CDATA[
+Given the user is on SignInPage.............................................passed
+When the user gives valid username password from sheetname "Logindetails" and RowNumber 1 and clicks Login button.passed
+Then the user lands onto HomePage and displays the message "You are logged in".passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature to test Hompage" name="User is on Homepage and able to naviagate to Datastructure page" time="0.586">
+<system-out><![CDATA[
+Given user is on Homepage after logged in...................................passed
+When the user clicks on DataStructure Get started button....................passed
+Then the user should be navigated to DataStructure Page hanving title "Data Structures-Introduction".passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature to test Hompage" name="User is able to signout" time="0.832">
+<system-out><![CDATA[
+Given user is on Homepage after logged in...................................passed
+When the user clicks on signout link........................................passed
+Then the user SignsOut and displays the message "Logged out successfully"...passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature to test RegisterPage" name="RegisterPage Title" time="0.275">
+<system-out><![CDATA[
+Given the user is on RegistrationPage.......................................passed
+When the user gets the Title of the RegisterPage............................passed
+Then the page title to be "Registration"....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature to test RegisterPage" name="The user is presented with error message for empty fields below Username textbox" time="0.551">
+<system-out><![CDATA[
+Given the user is on RegistrationPage.......................................passed
+When The user clicks Register button with all fields empty..................passed
+Then It should display an error "Please fill out this field." below Username textbox.passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature to test RegisterPage" name="The user is presented with error message for empty fields below Password textbox - Example #1.1" time="0.705">
+<system-out><![CDATA[
+Given the user is on RegistrationPage.......................................passed
+When The user clicks Register button after entering username "username" with all fields empty.passed
+Then It should display an error "Please fill out this field." below Password textbox.passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature to test RegisterPage" name="The user is presented with error message for empty fields below Password Confirmation textbox - Example #1.1" time="0.84">
+<system-out><![CDATA[
+Given the user is on RegistrationPage.......................................passed
+When The user clicks Register button after entering username "username" and password "password" with all fields empty.passed
+Then It should display an error "Please fill out this field." below Password Confirmation textbox.passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature to test RegisterPage" name="The user is presented with error message for password mismatch - Example #1.1" time="1.135">
+<system-out><![CDATA[
+Given the user is on RegistrationPage.......................................passed
+When The user clicks Register button after entering valid username and sheetname "RegisterPageDetails" and rownumber 0 different passwords in password and password confirmation fields from excelsheet.passed
+Then It should display an error message for passwordMismatch................passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature to test SignInPage" name="Verifying RegisterLink in SignInpage" time="0.499">
+<system-out><![CDATA[
+Given the user is on SignInPage.............................................passed
+When the user clicks on RegisterLink in SignInPage..........................passed
+Then the user redirected to RegistrationPage................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature to test SignInPage" name="User on login page and login with invalid inputs - Example #1.1" time="0.621">
+<system-out><![CDATA[
+Given the user is on SignInPage.............................................passed
+When The user have missing fields in username "" and password "pass"........passed
+Then verify missing fileds message..........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature to test SignInPage" name="User on login page and login with invalid inputs - Example #1.2" time="0.62">
+<system-out><![CDATA[
+Given the user is on SignInPage.............................................passed
+When The user have missing fields in username "user" and password ""........passed
+Then verify missing fileds message..........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature to test SignInPage" name="User on login page and login with invalid inputs - Example #1.3" time="0.578">
+<system-out><![CDATA[
+Given the user is on SignInPage.............................................passed
+When The user have missing fields in username "" and password ""............passed
+Then verify missing fileds message..........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature to test SignInPage" name="User on login page and login with valid from Excel - Example #1.1" time="1.228">
+<system-out><![CDATA[
+Given the user is on SignInPage.............................................passed
+When The user enters valid username password from sheetname "Logindetails" and RowNumber 1 and clicks Login button.passed
+Then the user verify valid login details....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature to test DataStructuresPage" name="The user is able to navigate to Data Structure introduction page" time="0.538">
+<system-out><![CDATA[
+Given The user is on the home page after logged in..........................passed
+When The user clicks the Getting Started button in Data Structure Page introduction Panel.passed
+Then The user should be redirected to data structure introduction page having title "Data Structures-Introduction".passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature to test DataStructuresPage" name="User is able to navigate to Time Complexity page" time="0.647">
+<system-out><![CDATA[
+Given The user is on Data Structures introduction page......................passed
+When The user clicks the Time Complexity link...............................passed
+Then The user should be redirected to the Time Complexity page having title "Time Complexity".passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature to test DataStructuresPage" name="The user is able to navigate to a page having an tryEditor from Time Complexity page" time="1.385">
+<system-out><![CDATA[
+Given the user is on TimeComplexityPage.....................................passed
+When the user clicks on TryHere button......................................passed
+Then the user should be redirected to Try Editor Page having page Title "Assessment".passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature to test DataStructuresPage" name="The user is in a page having an tryEditor with a Run button to test invalid python syntax - Example #1.1" time="1.241">
+<system-out><![CDATA[
+Given the user is in a page having tryEditor................................passed
+When The user enter python code with invalid syntax from sheet "pythonCode" and 0.passed
+Then The user should be presented with error message "SyntaxError: bad input on line 1".passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature to test DataStructuresPage" name="The user is in a page having an tryEditor with a Run button to test valid python syntax - Example #1.1" time="0.984">
+<system-out><![CDATA[
+Given the user is in a page having tryEditor................................passed
+When The user enter python code with valid syntax from sheet "pythonCode" and 1.passed
+Then The user should be presented with Run result "Hello"...................passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature to test Array page" name="The user is able to navigate to ARRAY Data Structure Page" time="0.754">
+<system-out><![CDATA[
+Given The user is on the home page after logged in..........................passed
+When The user select Array item from the drop down menu.....................passed
+Then The user should be redirected to Array Data Structure Page having page title "Array".passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature to test Array page" name="The user is able to navigate to Arrays in Python page" time="1.071">
+<system-out><![CDATA[
+Given The user is on the Array page after logged in.........................passed
+When The user clicks Arrays in Python link..................................passed
+Then The user should be redirected to Arrays in Python page having page title "Arrays in Python".passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature to test Array page" name="The user is able to navigate to a page having an tryEditor from Arrays in Python page" time="0.682">
+<system-out><![CDATA[
+Given The user is on the Arrays in Python page after logged in..............passed
+When the user clicks on TryHere button......................................passed
+Then the user should be redirected to Try Editor Page having page Title "Assessment".passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature to test Array page" name="The user is in a page having an tryEditor with a Run button to test invalid python syntax - Example #1.1" time="0.888">
+<system-out><![CDATA[
+Given the user is in a page having tryEditor................................passed
+When The user enter python code with invalid syntax from sheet "pythonCode" and 0.passed
+Then The user should be presented with error message "SyntaxError: bad input on line 1".passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature to test Array page" name="The user is in a page having an tryEditor with a Run button to test valid python syntax - Example #1.1" time="0.9">
+<system-out><![CDATA[
+Given the user is in a page having tryEditor................................passed
+When The user enter python code with valid syntax from sheet "pythonCode" and 1.passed
+Then The user should be presented with Run result "Hello"...................passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature to test Array page" name="The user is able to navigate to Arrays Using List page" time="0.752">
+<system-out><![CDATA[
+Given The user is on the Array page after logged in.........................passed
+When The user clicks Arrays Using List link.................................passed
+Then The user should be redirected to Arrays Using List page having page title "Arrays Using List".passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature to test Array page" name="The user is able to navigate to a page having an tryEditor for Arrays Using List page" time="0.693">
+<system-out><![CDATA[
+Given The user is on the Arrays Using List after logged in..................passed
+When the user clicks on TryHere button......................................passed
+Then the user should be redirected to Try Editor Page having page Title "Assessment".passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature to test Array page" name="The user is in a page having an tryEditor with a Run button to test invalid python syntax - Example #1.1" time="1.128">
+<system-out><![CDATA[
+Given the user is in a page having tryEditor................................passed
+When The user enter python code with invalid syntax from sheet "pythonCode" and 0.passed
+Then The user should be presented with error message "SyntaxError: bad input on line 1".passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature to test Array page" name="The user is in a page having an tryEditor with a Run button to test valid python syntax - Example #1.1" time="0.923">
+<system-out><![CDATA[
+Given the user is in a page having tryEditor................................passed
+When The user enter python code with valid syntax from sheet "pythonCode" and 1.passed
+Then The user should be presented with Run result "Hello"...................passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature to test Array page" name="The user is able to navigate to Basic Operations in Lists page" time="0.844">
+<system-out><![CDATA[
+Given The user is on the Array page after logged in.........................passed
+When The user clicks Basic Operations in Lists link.........................passed
+Then The user should be redirected to Basic Operations in Lists page having page title "Basic Operations in Lists".passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature to test Array page" name="The user is able to navigate to a page having an tryEditor f Basic Operations in Lists page" time="0.839">
+<system-out><![CDATA[
+Given The user is on the Basic Operations in Lists after logged in..........passed
+When the user clicks on TryHere button......................................passed
+Then the user should be redirected to Try Editor Page having page Title "Assessment".passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature to test Array page" name="The user is in a page having an tryEditor with a Run button to test invalid python syntax - Example #1.1" time="0.801">
+<system-out><![CDATA[
+Given the user is in a page having tryEditor................................passed
+When The user enter python code with invalid syntax from sheet "pythonCode" and 0.passed
+Then The user should be presented with error message "SyntaxError: bad input on line 1".passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature to test Array page" name="The user is in a page having an tryEditor with a Run button to test valid python syntax - Example #1.1" time="0.863">
+<system-out><![CDATA[
+Given the user is in a page having tryEditor................................passed
+When The user enter python code with valid syntax from sheet "pythonCode" and 1.passed
+Then The user should be presented with Run result "Hello"...................passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature to test Array page" name="The user is able to navigate to Applications of Array page" time="0.782">
+<system-out><![CDATA[
+Given The user is on the Array page after logged in.........................passed
+When The user clicks Applications of Array link.............................passed
+Then The user should be redirected to Applications of Array page having page title "Applications of Array".passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature to test Array page" name="The user is able to navigate to Practice page" time="0.533">
+<system-out><![CDATA[
+Given The user is on the Arrays in Python page after logged in..............passed
+When The user clicks Practice Questions link................................passed
+Then The user should be redirected to Practice page having title "Practice Questions".passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature to test Array page" name="The user is able to navigate to Question page from Search the array link" time="0.675">
+<system-out><![CDATA[
+Given The user is on the Practice page after logged in......................passed
+When The user clicks the Search the array link..............................passed
+Then The user should be redirected to question page having tryEditor with Run and Submit buttons having page Title "Assessment".passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature to test Array page" name="The user is able to run code in tryEditor for Search the array link - Example #1.1" time="2.662">
+<failure type="org.openqa.selenium.UnhandledAlertException" message="unexpected alert open: {Alert text : SyntaxError: bad input on line 2}&#xa;  (Session info: chrome=118.0.5993.117): SyntaxError: bad input on line 2&#xa;Build info: version: '4.12.1', revision: '8e34639b11'&#xa;System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.7.7', java.version: '17.0.7'&#xa;Driver info: org.openqa.selenium.chrome.ChromeDriver&#xa;Command: [11d283aa15ecfcb45434b67f9efce34e, findElement {using=xpath, value=//pre[@id ='output']}]&#xa;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.117, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: /var/folders/g_/0nhmnxv5743...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49975}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:49975/devtoo..., se:cdpVersion: 118.0.5993.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#xa;Session ID: 11d283aa15ecfcb45434b67f9efce34e">
+<![CDATA[org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : SyntaxError: bad input on line 2}
+  (Session info: chrome=118.0.5993.117): SyntaxError: bad input on line 2
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.7.7', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [11d283aa15ecfcb45434b67f9efce34e, findElement {using=xpath, value=//pre[@id ='output']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.117, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: /var/folders/g_/0nhmnxv5743...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49975}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:49975/devtoo..., se:cdpVersion: 118.0.5993.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 11d283aa15ecfcb45434b67f9efce34e
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:131)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy62.getText(Unknown Source)
+	at pagesPackage.ArrayPage.getActualResult(ArrayPage.java:121)
+	at stepDefinitions.ArraySteps.the_user_should_be_presented_with_run_result(ArraySteps.java:151)
+	at ✽.The user should be presented with Run result(file:///Users/arpanagodi/eclipse-workspace/DsAlgoCucumberProject/src/test/resources/Features/6_Array.feature:104)
+]]>
+</failure>
+<system-out><![CDATA[
+Given The user is on "Question" page of "Search the array" after logged in..passed
+When The user enter valid python code in tryEditor from sheetname "pythonCode" and rownumber 2 and clicks Run button.passed
+Then The user should be presented with Run result...........................failed
+]]></system-out>
+</testcase>
+<testcase classname="Feature to test Graph Page" name="The user is able to navigate to GRAPH Data Structure Page" time="0.678">
+<system-out><![CDATA[
+Given The user is on the home page after logged in..........................passed
+When The user selects Graph item from the drop down menu....................passed
+Then The user should be redirected to Graph Data Structure Page having page title "Graph".passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature to test Graph Page" name="The user is able to navigate to Graph page" time="0.598">
+<system-out><![CDATA[
+Given The user is on the Graph Page after logged in.........................passed
+When The user clicks Graph link on Graph page...............................passed
+Then The user should be redirected to Graph page in Graph page having page title "Graph".passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature to test Graph Page" name="The user is able to navigate to a page having an tryEditor from Graph page" time="0.853">
+<system-out><![CDATA[
+Given The user navigates to Graph page from Graph page......................passed
+When the user clicks on TryHere button......................................passed
+Then the user should be redirected to Try Editor Page having page Title "Assessment".passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature to test Graph Page" name="The user is in a page having an tryEditor with a Run button to test invalid python syntax - Example #1.1" time="0.9">
+<system-out><![CDATA[
+Given the user is in a page having tryEditor................................passed
+When The user enter python code with invalid syntax from sheet "pythonCode" and 0.passed
+Then The user should be presented with error message "SyntaxError: bad input on line 1".passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature to test Graph Page" name="The user is in a page having an tryEditor with a Run button to test valid python syntax - Example #1.1" time="0.976">
+<system-out><![CDATA[
+Given the user is in a page having tryEditor................................passed
+When The user enter python code with valid syntax from sheet "pythonCode" and 1.passed
+Then The user should be presented with Run result "Hello"...................passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature to test Graph Page" name="The user is able to navigate to Graph Representations link" time="0.8">
+<system-out><![CDATA[
+Given The user is on the Graph Page after logged in.........................passed
+When The user clicks on Graph Representations link..........................passed
+Then The user should be redirected to Graph Representations page having page title "Graph Representations".passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature to test Graph Page" name="The user is able to navigate to a page having an tryEditor from Graph Representations page" time="0.757">
+<system-out><![CDATA[
+Given The user navigates to Graph Representations page......................passed
+When the user clicks on TryHere button......................................passed
+Then the user should be redirected to Try Editor Page having page Title "Assessment".passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature to test Graph Page" name="The user is in a page having an tryEditor with a Run button to test invalid python syntax - Example #1.1" time="0.857">
+<system-out><![CDATA[
+Given the user is in a page having tryEditor................................passed
+When The user enter python code with invalid syntax from sheet "pythonCode" and 0.passed
+Then The user should be presented with error message "SyntaxError: bad input on line 1".passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature to test Graph Page" name="The user is in a page having an tryEditor with a Run button to test valid python syntax - Example #1.1" time="0.929">
+<system-out><![CDATA[
+Given the user is in a page having tryEditor................................passed
+When The user enter python code with valid syntax from sheet "pythonCode" and 1.passed
+Then The user should be presented with Run result "Hello"...................passed
+]]></system-out>
+</testcase>
+</testsuite>

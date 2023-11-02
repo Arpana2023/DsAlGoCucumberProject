@@ -1,0 +1,2271 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>DsAlgo Cucumber Framework</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ce8b10435bcbae260c334c0d0c6b61d2c19b6168/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Extent Reopots of DsAlgo Cucumber</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Oct 29, 2023 21:50:13</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Feature to test GetStarted page</p>
+            <p class="text-sm">
+              <span>9:50:25 PM</span> / <span>00:00:01:837</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Feature to test GetStarted page</h5>
+<span class='badge badge-success'>10.29.2023 9:50:25 PM</span>
+<span class='badge badge-danger'>10.29.2023 9:50:27 PM</span>
+<span class='badge badge-default'>00:00:01:837</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>User launches Url</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.GetStartedSteps.user_opens_dsalgo_application_url()">
+                <span>Given User opens dsalgo application url</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.GetStartedSteps.the_user_clicks_the_button()">
+                <span>When The user clicks the Get Started button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.GetStartedSteps.the_user_should_be_redirected_to_homepage()">
+                <span>Then The user should be redirected to homepage</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="9"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Feature to test Hompage</p>
+            <p class="text-sm">
+              <span>9:50:27 PM</span> / <span>00:00:16:685</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Feature to test Hompage</h5>
+<span class='badge badge-success'>10.29.2023 9:50:27 PM</span>
+<span class='badge badge-danger'>10.29.2023 9:50:44 PM</span>
+<span class='badge badge-default'>00:00:16:685</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=9</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="10"><span class="badge log pass-bg mr-2">Pass</span>User launch home page of an dsalgo project</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.HomeSteps.the_user_opens_ds_algo_portal_link()">
+                <span>Given the user opens DS Algo portal link</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.HomeSteps.the_user_clicks_the_button(java.lang.String)">
+                <span>When the user clicks the "Get Started" button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.HomeSteps.the_user_should_be_redirected_to_homepage()">
+                <span>Then the user should be redirected to homepage</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="17"><span class="badge log pass-bg mr-2">Pass</span>User is on Homepage and click GetStarted link on Homepage without sign in</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="18"><span class="badge log pass-bg mr-2">Pass</span>User is on Homepage and click GetStarted link on Homepage without sign in</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given the User is on HomePage</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When the user clicks on Get Started link on homepage "Datastructures"  without login</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then the user get warning message "You are not logged in"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="25"><span class="badge log pass-bg mr-2">Pass</span>User is on Homepage and click GetStarted link on Homepage without sign in</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given the User is on HomePage</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When the user clicks on Get Started link on homepage "Arrays"  without login</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then the user get warning message "You are not logged in"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="32"><span class="badge log pass-bg mr-2">Pass</span>User is on Homepage and click GetStarted link on Homepage without sign in</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given the User is on HomePage</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When the user clicks on Get Started link on homepage "Linked List"  without login</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then the user get warning message "You are not logged in"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="39"><span class="badge log pass-bg mr-2">Pass</span>User is on Homepage and click GetStarted link on Homepage without sign in</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given the User is on HomePage</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When the user clicks on Get Started link on homepage "Stack"  without login</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then the user get warning message "You are not logged in"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="46"><span class="badge log pass-bg mr-2">Pass</span>User is on Homepage and click GetStarted link on Homepage without sign in</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given the User is on HomePage</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When the user clicks on Get Started link on homepage "Queue"  without login</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then the user get warning message "You are not logged in"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="53"><span class="badge log pass-bg mr-2">Pass</span>User is on Homepage and click GetStarted link on Homepage without sign in</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given the User is on HomePage</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When the user clicks on Get Started link on homepage "Tree"  without login</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then the user get warning message "You are not logged in"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="60"><span class="badge log pass-bg mr-2">Pass</span>User is on Homepage and click GetStarted link on Homepage without sign in</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given the User is on HomePage</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When the user clicks on Get Started link on homepage "Graph"  without login</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then the user get warning message "You are not logged in"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="67"><span class="badge log pass-bg mr-2">Pass</span>User is on Homepage and click Dropdown on Homepage without sign in</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="68"><span class="badge log pass-bg mr-2">Pass</span>User is on Homepage and click Dropdown on Homepage without sign in</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given the User is on HomePage</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When the user clicks on Dropdown on homepage "Arrays" without login</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then the user get warning message "You are not logged in"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="75"><span class="badge log pass-bg mr-2">Pass</span>User is on Homepage and click Dropdown on Homepage without sign in</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given the User is on HomePage</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When the user clicks on Dropdown on homepage "Linked List" without login</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then the user get warning message "You are not logged in"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="82"><span class="badge log pass-bg mr-2">Pass</span>User is on Homepage and click Dropdown on Homepage without sign in</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given the User is on HomePage</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When the user clicks on Dropdown on homepage "Stack" without login</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then the user get warning message "You are not logged in"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="89"><span class="badge log pass-bg mr-2">Pass</span>User is on Homepage and click Dropdown on Homepage without sign in</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given the User is on HomePage</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When the user clicks on Dropdown on homepage "Queue" without login</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then the user get warning message "You are not logged in"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="96"><span class="badge log pass-bg mr-2">Pass</span>User is on Homepage and click Dropdown on Homepage without sign in</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given the User is on HomePage</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When the user clicks on Dropdown on homepage "Tree" without login</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then the user get warning message "You are not logged in"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="103"><span class="badge log pass-bg mr-2">Pass</span>User is on Homepage and click Dropdown on Homepage without sign in</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given the User is on HomePage</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When the user clicks on Dropdown on homepage "Graph" without login</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then the user get warning message "You are not logged in"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="110"><span class="badge log pass-bg mr-2">Pass</span>User is going into RegisterPage</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.HomeSteps.the_user_is_on_home_page()">
+                <span>Given the User is on HomePage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.HomeSteps.the_user_clicks_on_register_page()">
+                <span>When the user clicks on RegisterLink</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.HomeSteps.the_user_landson_register_page()">
+                <span>Then the user landsOn Register Page</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="117"><span class="badge log pass-bg mr-2">Pass</span>User is going into SigninPage</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.HomeSteps.the_user_is_on_home_page()">
+                <span>Given the User is on HomePage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.HomeSteps.the_user_clicks_on_sign_in_link_after_getting_the_not_logged_in_message()">
+                <span>When the user clicks on Sign in link after getting the not logged in message</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.HomeSteps.the_user_lands_on_login_page()">
+                <span>Then the user lands on loginPage</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="124"><span class="badge log pass-bg mr-2">Pass</span>User logging into Homepage after signing in successfully</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="125"><span class="badge log pass-bg mr-2">Pass</span>User logging into Homepage after signing in successfully</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given the user is on SignInPage</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When the user gives valid username password from sheetname "Logindetails" and RowNumber 1 and clicks Login button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then the user lands onto HomePage and displays the message "You are logged in"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="132"><span class="badge log pass-bg mr-2">Pass</span>User is on Homepage and able to naviagate to Datastructure page</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.HomeSteps.user_is_on_homepage_after_logged_in()">
+                <span>Given user is on Homepage after logged in</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.HomeSteps.the_user_clicks_on_data_structure_get_started_button()">
+                <span>When the user clicks on DataStructure Get started button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.HomeSteps.the_user_should_be_navigated_to_data_structure_page_hanving_title(java.lang.String)">
+                <span>Then the user should be navigated to DataStructure Page hanving title "Data Structures-Introduction"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="139"><span class="badge log pass-bg mr-2">Pass</span>User is able to signout</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.HomeSteps.user_is_on_homepage_after_logged_in()">
+                <span>Given user is on Homepage after logged in</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.HomeSteps.the_user_clicks_on_signout_link()">
+                <span>When the user clicks on signout link</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.HomeSteps.the_user_signs_out_and_displays_the_message(java.lang.String)">
+                <span>Then the user SignsOut and displays the message "Logged out successfully"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="146"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Feature to test RegisterPage</p>
+            <p class="text-sm">
+              <span>9:50:44 PM</span> / <span>00:00:03:624</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Feature to test RegisterPage</h5>
+<span class='badge badge-success'>10.29.2023 9:50:44 PM</span>
+<span class='badge badge-danger'>10.29.2023 9:50:47 PM</span>
+<span class='badge badge-default'>00:00:03:624</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=146</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="147"><span class="badge log pass-bg mr-2">Pass</span>RegisterPage Title</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.RegisterSteps.the_user_is_on_register_page()">
+                <span>Given the user is on RegistrationPage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.RegisterSteps.the_user_gets_the_title_of_the_register_page()">
+                <span>When the user gets the Title of the RegisterPage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.RegisterSteps.the_page_title_to_be(java.lang.String)">
+                <span>Then the page title to be "Registration"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="154"><span class="badge log pass-bg mr-2">Pass</span>The user is presented with error message for empty fields below Username textbox</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.RegisterSteps.the_user_is_on_register_page()">
+                <span>Given the user is on RegistrationPage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.RegisterSteps.the_user_clicks_button_with_all_fields_empty()">
+                <span>When The user clicks Register button with all fields empty</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.RegisterSteps.it_should_display_an_error_below_username_textbox(java.lang.String)">
+                <span>Then It should display an error "Please fill out this field." below Username textbox</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="161"><span class="badge log pass-bg mr-2">Pass</span>The user is presented with error message for empty fields below Password textbox</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="162"><span class="badge log pass-bg mr-2">Pass</span>The user is presented with error message for empty fields below Password textbox</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given the user is on RegistrationPage</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When The user clicks Register button after entering username "username" with all fields empty</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then It should display an error "Please fill out this field." below Password textbox</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="169"><span class="badge log pass-bg mr-2">Pass</span>The user is presented with error message for empty fields below Password Confirmation textbox</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="170"><span class="badge log pass-bg mr-2">Pass</span>The user is presented with error message for empty fields below Password Confirmation textbox</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given the user is on RegistrationPage</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When The user clicks Register button after entering username "username" and password "password" with all fields empty</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then It should display an error "Please fill out this field." below Password Confirmation textbox</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="177"><span class="badge log pass-bg mr-2">Pass</span>The user is presented with error message for password mismatch</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="178"><span class="badge log pass-bg mr-2">Pass</span>The user is presented with error message for password mismatch</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given the user is on RegistrationPage</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When The user clicks Register button after entering valid username and sheetname "RegisterPageDetails" and rownumber 0 different passwords in password and password confirmation fields from excelsheet</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then It should display an error message for passwordMismatch</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="185"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Feature to test SignInPage</p>
+            <p class="text-sm">
+              <span>9:50:47 PM</span> / <span>00:00:03:668</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Feature to test SignInPage</h5>
+<span class='badge badge-success'>10.29.2023 9:50:47 PM</span>
+<span class='badge badge-danger'>10.29.2023 9:50:51 PM</span>
+<span class='badge badge-default'>00:00:03:668</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=185</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="186"><span class="badge log pass-bg mr-2">Pass</span>Verifying RegisterLink in SignInpage</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.SignInSteps.the_user_is_on_sign_in_page()">
+                <span>Given the user is on SignInPage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.SignInSteps.the_user_clicks_on_register_link_in_sign_in_page()">
+                <span>When the user clicks on RegisterLink in SignInPage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.SignInSteps.the_user_redirected_to_registration_page()">
+                <span>Then the user redirected to RegistrationPage</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="193"><span class="badge log pass-bg mr-2">Pass</span>User on login page and login with invalid inputs</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="194"><span class="badge log pass-bg mr-2">Pass</span>User on login page and login with invalid inputs</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given the user is on SignInPage</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When The user have missing fields in username "" and password "pass"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then verify missing fileds message</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="201"><span class="badge log pass-bg mr-2">Pass</span>User on login page and login with invalid inputs</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given the user is on SignInPage</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When The user have missing fields in username "user" and password ""</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then verify missing fileds message</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="208"><span class="badge log pass-bg mr-2">Pass</span>User on login page and login with invalid inputs</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given the user is on SignInPage</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When The user have missing fields in username "" and password ""</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then verify missing fileds message</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="215"><span class="badge log pass-bg mr-2">Pass</span>User on login page and login with valid from Excel</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="216"><span class="badge log pass-bg mr-2">Pass</span>User on login page and login with valid from Excel</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given the user is on SignInPage</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When The user enters valid username password from sheetname "Logindetails" and RowNumber 1 and clicks Login button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then the user verify valid login details</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="223"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Feature to test DataStructuresPage</p>
+            <p class="text-sm">
+              <span>9:50:51 PM</span> / <span>00:00:04:877</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Feature to test DataStructuresPage</h5>
+<span class='badge badge-success'>10.29.2023 9:50:51 PM</span>
+<span class='badge badge-danger'>10.29.2023 9:50:56 PM</span>
+<span class='badge badge-default'>00:00:04:877</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=223</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="224"><span class="badge log pass-bg mr-2">Pass</span>The user is able to navigate to Data Structure introduction page</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.DataStructuresSteps.the_user_is_on_the_home_page_after_logged_in()">
+                <span>Given The user is on the home page after logged in</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.DataStructuresSteps.the_user_clicks_the_getting_started_button_in_data_structure_page_introduction_panel()">
+                <span>When The user clicks the Getting Started button in Data Structure Page introduction Panel</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.DataStructuresSteps.the_user_should_be_redirected_to_data_structure_introduction_page_having_title(java.lang.String)">
+                <span>Then The user should be redirected to data structure introduction page having title "Data Structures-Introduction"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="231"><span class="badge log pass-bg mr-2">Pass</span>User is able to navigate to Time Complexity page</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.DataStructuresSteps.the_user_is_on_data_structures_introduction_page()">
+                <span>Given The user is on Data Structures introduction page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.DataStructuresSteps.the_user_clicks_the_time_complexity_link()">
+                <span>When The user clicks the Time Complexity link</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.DataStructuresSteps.the_user_should_be_redirected_to_the_time_complexity_page_having_title(java.lang.String)">
+                <span>Then The user should be redirected to the Time Complexity page having title "Time Complexity"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="238"><span class="badge log pass-bg mr-2">Pass</span>The user is able to navigate to a page having an tryEditor from Time Complexity page</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.DataStructuresSteps.the_user_is_on_time_complexity_page()">
+                <span>Given the user is on TimeComplexityPage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.DataStructuresSteps.the_user_clicks_on_try_here_button()">
+                <span>When the user clicks on TryHere button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.DataStructuresSteps.the_user_should_be_redirected_to_try_editor_page_having_page_title(java.lang.String)">
+                <span>Then the user should be redirected to Try Editor Page having page Title "Assessment"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="245"><span class="badge log pass-bg mr-2">Pass</span>The user is in a page having an tryEditor with a Run button to test invalid python syntax</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="246"><span class="badge log pass-bg mr-2">Pass</span>The user is in a page having an tryEditor with a Run button to test invalid python syntax</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given the user is in a page having tryEditor</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When The user enter python code with invalid syntax from sheet "pythonCode" and 0</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then The user should be presented with error message "SyntaxError: bad input on line 1"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="253"><span class="badge log pass-bg mr-2">Pass</span>The user is in a page having an tryEditor with a Run button to test valid python syntax</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="254"><span class="badge log pass-bg mr-2">Pass</span>The user is in a page having an tryEditor with a Run button to test valid python syntax</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given the user is in a page having tryEditor</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When The user enter python code with valid syntax from sheet "pythonCode" and 1</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then The user should be presented with Run result "Hello"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="261"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Feature to test Array page</p>
+            <p class="text-sm">
+              <span>9:50:56 PM</span> / <span>00:00:16:179</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Feature to test Array page</h5>
+<span class='badge badge-success'>10.29.2023 9:50:56 PM</span>
+<span class='badge badge-danger'>10.29.2023 9:51:12 PM</span>
+<span class='badge badge-default'>00:00:16:179</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=261</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="262"><span class="badge log pass-bg mr-2">Pass</span>The user is able to navigate to ARRAY Data Structure Page</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.DataStructuresSteps.the_user_is_on_the_home_page_after_logged_in()">
+                <span>Given The user is on the home page after logged in</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.ArraySteps.the_user_select_array_item_from_the_drop_down_menu()">
+                <span>When The user select Array item from the drop down menu</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.ArraySteps.the_user_should_be_redirected_to_array_data_structure_page_having_page_title(java.lang.String)">
+                <span>Then The user should be redirected to Array Data Structure Page having page title "Array"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="269"><span class="badge log pass-bg mr-2">Pass</span>The user is able to navigate to Arrays in Python page</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.ArraySteps.the_user_is_on_the_array_page_after_logged_in()">
+                <span>Given The user is on the Array page after logged in</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.ArraySteps.the_user_clicks_arrays_in_python_link()">
+                <span>When The user clicks Arrays in Python link</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.ArraySteps.the_user_should_be_redirected_to_arrays_in_python_page_having_page_title(java.lang.String)">
+                <span>Then The user should be redirected to Arrays in Python page having page title "Arrays in Python"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="276"><span class="badge log pass-bg mr-2">Pass</span>The user is able to navigate to a page having an tryEditor from Arrays in Python page</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.ArraySteps.the_user_is_on_the_arrays_in_python_page_after_logged_in()">
+                <span>Given The user is on the Arrays in Python page after logged in</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.DataStructuresSteps.the_user_clicks_on_try_here_button()">
+                <span>When the user clicks on TryHere button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.DataStructuresSteps.the_user_should_be_redirected_to_try_editor_page_having_page_title(java.lang.String)">
+                <span>Then the user should be redirected to Try Editor Page having page Title "Assessment"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="283"><span class="badge log pass-bg mr-2">Pass</span>The user is in a page having an tryEditor with a Run button to test invalid python syntax</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="284"><span class="badge log pass-bg mr-2">Pass</span>The user is in a page having an tryEditor with a Run button to test invalid python syntax</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given the user is in a page having tryEditor</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When The user enter python code with invalid syntax from sheet "pythonCode" and 0</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then The user should be presented with error message "SyntaxError: bad input on line 1"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="291"><span class="badge log pass-bg mr-2">Pass</span>The user is in a page having an tryEditor with a Run button to test valid python syntax</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="292"><span class="badge log pass-bg mr-2">Pass</span>The user is in a page having an tryEditor with a Run button to test valid python syntax</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given the user is in a page having tryEditor</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When The user enter python code with valid syntax from sheet "pythonCode" and 1</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then The user should be presented with Run result "Hello"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="299"><span class="badge log pass-bg mr-2">Pass</span>The user is able to navigate to Arrays Using List page</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.ArraySteps.the_user_is_on_the_array_page_after_logged_in()">
+                <span>Given The user is on the Array page after logged in</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.ArraySteps.the_user_clicks_arrays_using_list_link()">
+                <span>When The user clicks Arrays Using List link</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.ArraySteps.the_user_should_be_redirected_to_arrays_using_list_page_having_page_title(java.lang.String)">
+                <span>Then The user should be redirected to Arrays Using List page having page title "Arrays Using List"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="306"><span class="badge log pass-bg mr-2">Pass</span>The user is able to navigate to a page having an tryEditor for Arrays Using List page</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.ArraySteps.the_user_is_on_the_arrays_using_list_after_logged_in()">
+                <span>Given The user is on the Arrays Using List after logged in</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.DataStructuresSteps.the_user_clicks_on_try_here_button()">
+                <span>When the user clicks on TryHere button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.DataStructuresSteps.the_user_should_be_redirected_to_try_editor_page_having_page_title(java.lang.String)">
+                <span>Then the user should be redirected to Try Editor Page having page Title "Assessment"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="313"><span class="badge log pass-bg mr-2">Pass</span>The user is in a page having an tryEditor with a Run button to test invalid python syntax</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="314"><span class="badge log pass-bg mr-2">Pass</span>The user is in a page having an tryEditor with a Run button to test invalid python syntax</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given the user is in a page having tryEditor</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When The user enter python code with invalid syntax from sheet "pythonCode" and 0</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then The user should be presented with error message "SyntaxError: bad input on line 1"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="321"><span class="badge log pass-bg mr-2">Pass</span>The user is in a page having an tryEditor with a Run button to test valid python syntax</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="322"><span class="badge log pass-bg mr-2">Pass</span>The user is in a page having an tryEditor with a Run button to test valid python syntax</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given the user is in a page having tryEditor</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When The user enter python code with valid syntax from sheet "pythonCode" and 1</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then The user should be presented with Run result "Hello"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="329"><span class="badge log pass-bg mr-2">Pass</span>The user is able to navigate to Basic Operations in Lists page</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.ArraySteps.the_user_is_on_the_array_page_after_logged_in()">
+                <span>Given The user is on the Array page after logged in</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.ArraySteps.the_user_clicks_basic_operations_in_lists_link()">
+                <span>When The user clicks Basic Operations in Lists link</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.ArraySteps.the_user_should_be_redirected_to_basic_operations_in_lists_page_having_page_title(java.lang.String)">
+                <span>Then The user should be redirected to Basic Operations in Lists page having page title "Basic Operations in Lists"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="336"><span class="badge log pass-bg mr-2">Pass</span>The user is able to navigate to a page having an tryEditor f Basic Operations in Lists page</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.ArraySteps.the_user_is_on_the_basic_operations_in_lists_after_logged_in()">
+                <span>Given The user is on the Basic Operations in Lists after logged in</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.DataStructuresSteps.the_user_clicks_on_try_here_button()">
+                <span>When the user clicks on TryHere button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.DataStructuresSteps.the_user_should_be_redirected_to_try_editor_page_having_page_title(java.lang.String)">
+                <span>Then the user should be redirected to Try Editor Page having page Title "Assessment"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="343"><span class="badge log pass-bg mr-2">Pass</span>The user is in a page having an tryEditor with a Run button to test invalid python syntax</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="344"><span class="badge log pass-bg mr-2">Pass</span>The user is in a page having an tryEditor with a Run button to test invalid python syntax</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given the user is in a page having tryEditor</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When The user enter python code with invalid syntax from sheet "pythonCode" and 0</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then The user should be presented with error message "SyntaxError: bad input on line 1"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="351"><span class="badge log pass-bg mr-2">Pass</span>The user is in a page having an tryEditor with a Run button to test valid python syntax</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="352"><span class="badge log pass-bg mr-2">Pass</span>The user is in a page having an tryEditor with a Run button to test valid python syntax</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given the user is in a page having tryEditor</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When The user enter python code with valid syntax from sheet "pythonCode" and 1</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then The user should be presented with Run result "Hello"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="359"><span class="badge log pass-bg mr-2">Pass</span>The user is able to navigate to Applications of Array page</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.ArraySteps.the_user_is_on_the_array_page_after_logged_in()">
+                <span>Given The user is on the Array page after logged in</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.ArraySteps.the_user_clicks_applications_of_array_link()">
+                <span>When The user clicks Applications of Array link</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.ArraySteps.the_user_should_be_redirected_to_applications_of_array_page_having_page_title(java.lang.String)">
+                <span>Then The user should be redirected to Applications of Array page having page title "Applications of Array"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="366"><span class="badge log pass-bg mr-2">Pass</span>The user is able to navigate to Practice page</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.ArraySteps.the_user_is_on_the_arrays_in_python_page_after_logged_in()">
+                <span>Given The user is on the Arrays in Python page after logged in</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.ArraySteps.the_user_clicks_practice_questions_link()">
+                <span>When The user clicks Practice Questions link</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.ArraySteps.the_user_should_be_redirected_to_practice_page_having_title(java.lang.String)">
+                <span>Then The user should be redirected to Practice page having title "Practice Questions"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="373"><span class="badge log pass-bg mr-2">Pass</span>The user is able to navigate to Question page from Search the array link</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.ArraySteps.the_user_is_on_the_practice_page_after_logged_in()">
+                <span>Given The user is on the Practice page after logged in</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.ArraySteps.the_user_clicks_the_search_the_array_link()">
+                <span>When The user clicks the Search the array link</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.ArraySteps.the_user_should_be_redirected_to_question_page_having_try_editor_with_run_and_submit_buttons_having_page_title(java.lang.String)">
+                <span>Then The user should be redirected to question page having tryEditor with Run and Submit buttons having page Title "Assessment"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="380"><span class="badge log fail-bg mr-2">Fail</span>The user is able to run code in tryEditor for Search the array link</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="scenario_outline ">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="381"><span class="badge log fail-bg mr-2">Fail</span>The user is able to run code in tryEditor for Search the array link</div>
+                    <div class="status-avatar float-right">
+                      <i class="fa fa-paperclip"></i>
+                    </div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step pass-bg">
+                    <span>Given The user is on "Question" page of "Search the array" after logged in</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When The user enter valid python code in tryEditor from sheetname "pythonCode" and rownumber 2 and clicks Run button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>Then The user should be presented with Run result</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : SyntaxError: bad input on line 2}
+  (Session info: chrome=118.0.5993.117): SyntaxError: bad input on line 2
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.7.7', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [11d283aa15ecfcb45434b67f9efce34e, findElement {using=xpath, value=//pre[@id ='output']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 118.0.5993.117, chrome: {chromedriverVersion: 118.0.5993.70 (e52f33f30b91..., userDataDir: /var/folders/g_/0nhmnxv5743...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49975}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:49975/devtoo..., se:cdpVersion: 118.0.5993.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 11d283aa15ecfcb45434b67f9efce34e
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:131)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy62.getText(Unknown Source)
+	at pagesPackage.ArrayPage.getActualResult(ArrayPage.java:121)
+	at stepDefinitions.ArraySteps.the_user_should_be_presented_with_run_result(ArraySteps.java:151)
+	at ✽.The user should be presented with Run result(file:///Users/arpanagodi/eclipse-workspace/DsAlgoCucumberProject/src/test/resources/Features/6_Array.feature:104)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>appHooks.hooks.addScreenShot(io.cucumber.java.Scenario)</span>
+      <div>The_user_is_able_to_run_code_in_tryEditor_for_Search_the_array_link
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../screenshots/embedded1.png' src="../screenshots/embedded1.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="388"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Feature to test Graph Page</p>
+            <p class="text-sm">
+              <span>9:51:12 PM</span> / <span>00:00:07:468</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Feature to test Graph Page</h5>
+<span class='badge badge-success'>10.29.2023 9:51:12 PM</span>
+<span class='badge badge-danger'>10.29.2023 9:51:20 PM</span>
+<span class='badge badge-default'>00:00:07:468</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=388</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="389"><span class="badge log pass-bg mr-2">Pass</span>The user is able to navigate to GRAPH Data Structure Page</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.DataStructuresSteps.the_user_is_on_the_home_page_after_logged_in()">
+                <span>Given The user is on the home page after logged in</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.GraphSteps.the_user_selects_graph_item_from_the_drop_down_menu()">
+                <span>When The user selects Graph item from the drop down menu</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.GraphSteps.the_user_should_be_redirected_to_graph_data_structure_page_having_page_title(java.lang.String)">
+                <span>Then The user should be redirected to Graph Data Structure Page having page title "Graph"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="396"><span class="badge log pass-bg mr-2">Pass</span>The user is able to navigate to Graph page</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.GraphSteps.the_user_is_on_the_graph_page_after_logged_in()">
+                <span>Given The user is on the Graph Page after logged in</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.GraphSteps.the_user_clicks_graph_link_on_graph_page()">
+                <span>When The user clicks Graph link on Graph page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.GraphSteps.the_user_should_be_redirected_to_graph_page_in_graph_page_having_page_title(java.lang.String)">
+                <span>Then The user should be redirected to Graph page in Graph page having page title "Graph"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="403"><span class="badge log pass-bg mr-2">Pass</span>The user is able to navigate to a page having an tryEditor from Graph page</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.GraphSteps.the_user_navigates_to_graph_page_from_graph_page()">
+                <span>Given The user navigates to Graph page from Graph page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.DataStructuresSteps.the_user_clicks_on_try_here_button()">
+                <span>When the user clicks on TryHere button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.DataStructuresSteps.the_user_should_be_redirected_to_try_editor_page_having_page_title(java.lang.String)">
+                <span>Then the user should be redirected to Try Editor Page having page Title "Assessment"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="410"><span class="badge log pass-bg mr-2">Pass</span>The user is in a page having an tryEditor with a Run button to test invalid python syntax</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="411"><span class="badge log pass-bg mr-2">Pass</span>The user is in a page having an tryEditor with a Run button to test invalid python syntax</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given the user is in a page having tryEditor</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When The user enter python code with invalid syntax from sheet "pythonCode" and 0</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then The user should be presented with error message "SyntaxError: bad input on line 1"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="418"><span class="badge log pass-bg mr-2">Pass</span>The user is in a page having an tryEditor with a Run button to test valid python syntax</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="419"><span class="badge log pass-bg mr-2">Pass</span>The user is in a page having an tryEditor with a Run button to test valid python syntax</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given the user is in a page having tryEditor</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When The user enter python code with valid syntax from sheet "pythonCode" and 1</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then The user should be presented with Run result "Hello"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="426"><span class="badge log pass-bg mr-2">Pass</span>The user is able to navigate to Graph Representations link</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.GraphSteps.the_user_is_on_the_graph_page_after_logged_in()">
+                <span>Given The user is on the Graph Page after logged in</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.GraphSteps.the_user_clicks_on_graph_representations_link()">
+                <span>When The user clicks on Graph Representations link</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.GraphSteps.the_user_should_be_redirected_to_graph_representations_page_having_page_title(java.lang.String)">
+                <span>Then The user should be redirected to Graph Representations page having page title "Graph Representations"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="433"><span class="badge log pass-bg mr-2">Pass</span>The user is able to navigate to a page having an tryEditor from Graph Representations page</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepDefinitions.GraphSteps.the_user_navigates_to_graph_representations_page()">
+                <span>Given The user navigates to Graph Representations page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.DataStructuresSteps.the_user_clicks_on_try_here_button()">
+                <span>When the user clicks on TryHere button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepDefinitions.DataStructuresSteps.the_user_should_be_redirected_to_try_editor_page_having_page_title(java.lang.String)">
+                <span>Then the user should be redirected to Try Editor Page having page Title "Assessment"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="440"><span class="badge log pass-bg mr-2">Pass</span>The user is in a page having an tryEditor with a Run button to test invalid python syntax</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="441"><span class="badge log pass-bg mr-2">Pass</span>The user is in a page having an tryEditor with a Run button to test invalid python syntax</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given the user is in a page having tryEditor</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When The user enter python code with invalid syntax from sheet "pythonCode" and 0</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then The user should be presented with error message "SyntaxError: bad input on line 1"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="448"><span class="badge log pass-bg mr-2">Pass</span>The user is in a page having an tryEditor with a Run button to test valid python syntax</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="449"><span class="badge log pass-bg mr-2">Pass</span>The user is in a page having an tryEditor with a Run button to test valid python syntax</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given the user is in a page having tryEditor</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When The user enter python code with valid syntax from sheet "pythonCode" and 1</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then The user should be presented with Run result "Hello"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">org.openqa.selenium.UnhandledAlertException</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.openqa.selenium.UnhandledAlertException</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>21:51:12 PM</td>
+<td>
+<a href="#" class="linked" test-id='261' id='386'>Then The user should be presented with Run result</a>
+<div class="">
+<span class="badge badge-default">Feature to test Array page.The user is able to run code in tryEditor for Search the array link.Then The user should be presented with Run result</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Oct 29, 2023 21:50:13</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Oct 29, 2023 21:51:20</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>6</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>1</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='85%'>
+<b>6</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='14%'><b>1</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='98%'><b>60</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='1%'><b>1</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='99%'><b>183</b> steps passed</small></div>
+<div>
+<small data-tooltip='0%'><b>1</b> steps failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"Feature to test GetStarted page":1.837,"Feature to test Hompage":16.685,"Feature to test RegisterPage":3.624,"Feature to test SignInPage":3.668,"Feature to test DataStructuresPage":4.877,"Feature to test Array page":16.179,"Feature to test Graph Page":7.468
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 sysenv-container">
+<div class="card">
+<div class="card-header"><p>System/Environment</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
+<tbody>
+<tr>
+<td>version</td>
+<td>11.7.7</td>
+</tr>
+<tr>
+<td>Project</td>
+<td>DsAlgoCucumber</td>
+</tr>
+<tr>
+<td>Browser</td>
+<td>Google chrome</td>
+</tr>
+<tr>
+<td>os</td>
+<td>MacOs BigSur</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 6,
+failParent: 1,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 60,
+failChild: 1,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 183,
+failGrandChild: 1,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ce8b10435bcbae260c334c0d0c6b61d2c19b6168/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>

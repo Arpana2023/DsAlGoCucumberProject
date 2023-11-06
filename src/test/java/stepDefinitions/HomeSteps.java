@@ -129,8 +129,8 @@ public class HomeSteps extends BaseClass
 	@When("the user clicks on DataStructure Get started button")
 	public void the_user_clicks_on_data_structure_get_started_button() 
 	{
-		homePageObj.ClickOnDataStrctGetStrtdOrDropDwn("Datastructures");
-		//homePageObj.clickgetStartedDS();
+		//homePageObj.ClickOnDataStrctGetStrtdOrDropDwn("Datastructures");
+		homePageObj.clickgetStartedDS();
 	}
 
 	@Then("the user should be navigated to DataStructure Page having title {string}")

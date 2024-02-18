@@ -1,3 +1,4 @@
+
 package driverFactoryPkg;
 
 import java.util.Properties;
@@ -67,14 +68,14 @@ public class DriverFactory
 		{
 			//WebDriverManager.edgedriver().setup();
 			driver = new EdgeDriver();
-			tdriver.set(new EdgeDriver());
+			tdriver.set(driver);
 		}
 
 		else if (browserName.equalsIgnoreCase("safari")) 
 		{
 			//WebDriverManager.safaridriver().setup();
 			driver = new SafariDriver();
-			tdriver.set(new SafariDriver());
+			tdriver.set(driver);
 		}
 		
 		getDriver().manage().window().maximize();
@@ -85,6 +86,7 @@ public class DriverFactory
 		//getDriver().get(prop.getProperty("url")); 		
 		return getDriver();
 	}
+	
 	public static synchronized WebDriver getDriver() //Multiple threads running in parallel execution and they all be calling this getdriver() method
 	{                                                //so all the threads they should be in sync so we use sychronized Keyword
 		return tdriver.get();                        //This is used to get the driver with Thread Local

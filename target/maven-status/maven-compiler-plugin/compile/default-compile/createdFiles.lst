@@ -2,6 +2,7 @@ pagesPackage/GraphPage.class
 utilities/BaseClass.class
 pagesPackage/HomePage.class
 utilities/util.class
+utilities/Loggerload.class
 pagesPackage/QueuePage.class
 pagesPackage/RegisterPage.class
 pagesPackage/LinkedListPage.class
@@ -10,6 +11,8 @@ utilities/ExcelReader.class
 driverFactoryPkg/DriverFactory.class
 pagesPackage/DataStructuresPage.class
 pagesPackage/StackPage.class
+locators/GraphPageLocators.class
+pagesPackage/ArrayPage.class
 pagesPackage/GetStartedPage.class
 utilities/ConfigReader.class
 pagesPackage/SignInPage.class

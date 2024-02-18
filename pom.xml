@@ -10,14 +10,14 @@
 <dependency>
 <groupId>io.cucumber</groupId>
 <artifactId>cucumber-java</artifactId>
-<version>7.14.0</version>
+<version>7.15.0</version>
 </dependency>
 
 <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-junit -->
 <dependency>
 <groupId>io.cucumber</groupId>
 <artifactId>cucumber-junit</artifactId>
- <version>7.14.0</version> 
+ <version>7.15.0</version> 
 <scope>test</scope>
 </dependency>
 <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-core -->
@@ -30,7 +30,7 @@
 <dependency>
     <groupId>io.cucumber</groupId>
     <artifactId>cucumber-testng</artifactId>
-    <version>7.14.0</version>
+    <version>7.15.0</version>
 </dependency>
 
 <!-- https://mvnrepository.com/artifact/junit/junit -->
@@ -45,7 +45,7 @@
 <dependency>
 <groupId>org.seleniumhq.selenium</groupId>
 <artifactId>selenium-java</artifactId>
-<version>4.12.1</version>
+<version>4.17.0</version>
 </dependency>
 
 <!-- https://mvnrepository.com/artifact/io.qameta.allure/allure-cucumber7-jvm -->
@@ -97,6 +97,8 @@
     <artifactId>log4j-api</artifactId>
     <version>3.0.0-alpha1</version>
 </dependency>
+<!-- https://mvnrepository.com/artifact/net.masterthought/cucumber-reporting -->
+<!-- https://mvnrepository.com/artifact/net.masterthought/maven-cucumber-reporting -->
 
 </dependencies>	
 <build>
@@ -122,7 +124,34 @@
 		          <target>1.8</target>
 		           <encoding>UTF-8</encoding>          
 		        </configuration>
-		      </plugin>	  		      		     
+		      </plugin>	
+		      
+		      <plugin>
+   <groupId>net.masterthought</groupId>
+   <artifactId>maven-cucumber-reporting</artifactId>
+   <version>5.6.0</version>
+   <executions>
+     <execution>
+	<id>execution</id>
+	<phase>verify</phase>
+	<goals>
+	    <goal>generate</goal>
+	</goals>
+	<configuration>		
+	<projectName>cucumberReporting</projectName>    
+        <skip>false</skip>		
+        <outputDirectory>${project.build.directory}</outputDirectory>	     
+        <inputDirectory>${project.build.directory}</inputDirectory>
+        <jsonFiles>
+          <param>**/*.json</param>
+        </jsonFiles>	
+        <mergeFeaturesById>false</mergeFeaturesById>
+        <mergeFeaturesWithRetest>false</mergeFeaturesWithRetest>
+        <checkBuildResult>false</checkBuildResult>		    			  
+        </configuration>
+   </execution>
+  </executions>
+</plugin>  		      		     
       	</plugins>
   	</build>
 </project>

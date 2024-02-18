@@ -198,6 +198,12 @@ public class ConfigReader
 		else
 			throw new RuntimeException("url not specified in the Configuration.properties file.");
 	}
+	public String getReportConfigPath()
+	{
+		String reportConfigPath = prop.getProperty("extentReportfilePath");
+		if(reportConfigPath!= null) return reportConfigPath;
+		else throw new RuntimeException("Report Config Path not specified in the Configuration.properties file for the Key:reportConfigPath");		
+	}
 //	public static String getCellData(String SheetName,int rownum,int colnum) throws IOException {
 //		
 //		String path=System.getProperty("user.dir")+"/src/test/resources/TestData/DSAlgo_Login.xlsx";

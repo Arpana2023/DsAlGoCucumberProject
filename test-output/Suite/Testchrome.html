@@ -1,0 +1,443 @@
+<html>
+<head>
+<title>TestNG:  Testchrome</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Testchrome</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>60/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Nov 05 12:28:05 PST 2023</td>
+</tr>
+<tr><td>Total time:</td><td>88 seconds (88639 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='runners.testRunner.runScenario()'><b>runScenario</b><br>Test class: runners.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to run code in tryEditor for Search the array link", "Feature to test Array page"</td>
+<td><div><pre>org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : SyntaxError: bad input on line 2}
+  (Session info: chrome=119.0.6045.105): SyntaxError: bad input on line 2
+Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.7.7&apos;, java.version: &apos;17.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f6bc9850abf4b0d3bf09a8e5fcafa58d, findElement {using=xpath, value=//pre[@id =&apos;output&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.105, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: /var/folders/g_/0nhmnxv5743...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65178}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:65178/devtoo..., se:cdpVersion: 119.0.6045.105, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f6bc9850abf4b0d3bf09a8e5fcafa58d
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:131)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy62.getText(Unknown Source)
+	at pagesPackage.ArrayPage.getActualResult(ArrayPage.java:121)
+	at stepDefinitions.ArraySteps.the_user_should_be_presented_with_run_result(ArraySteps.java:151)
+	at ✽.The user should be presented with Run result(file:///Users/arpanagodi/eclipse-workspace/DsAlgoCucumberProject/src/test/resources/Features/6_Array.feature:104)
+</pre></div><a href='#' onClick='toggleBox("stack-trace874023329", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace874023329'><pre>org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : SyntaxError: bad input on line 2}
+  (Session info: chrome=119.0.6045.105): SyntaxError: bad input on line 2
+Build info: version: &apos;4.12.1&apos;, revision: &apos;8e34639b11&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.7.7&apos;, java.version: &apos;17.0.7&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f6bc9850abf4b0d3bf09a8e5fcafa58d, findElement {using=xpath, value=//pre[@id =&apos;output&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.105, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: /var/folders/g_/0nhmnxv5743...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65178}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:65178/devtoo..., se:cdpVersion: 119.0.6045.105, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f6bc9850abf4b0d3bf09a8e5fcafa58d
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:131)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy62.getText(Unknown Source)
+	at pagesPackage.ArrayPage.getActualResult(ArrayPage.java:121)
+	at stepDefinitions.ArraySteps.the_user_should_be_presented_with_run_result(ArraySteps.java:151)
+	at ✽.The user should be presented with Run result(file:///Users/arpanagodi/eclipse-workspace/DsAlgoCucumberProject/src/test/resources/Features/6_Array.feature:104)
+</pre></div></td>
+<td>3</td>
+<td>runners.testRunner@710636b0</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='runners.testRunner.runScenario()'><b>runScenario</b><br>Test class: runners.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Basic Operations in Lists page", "Feature to test Array page"</td>
+<td></td>
+<td>0</td>
+<td>runners.testRunner@710636b0</td></tr>
+<tr>
+<td title='runners.testRunner.runScenario()'><b>runScenario</b><br>Test class: runners.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is presented with error message for password mismatch", "Feature to test RegisterPage"</td>
+<td></td>
+<td>1</td>
+<td>runners.testRunner@710636b0</td></tr>
+<tr>
+<td title='runners.testRunner.runScenario()'><b>runScenario</b><br>Test class: runners.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Applications of Array page", "Feature to test Array page"</td>
+<td></td>
+<td>0</td>
+<td>runners.testRunner@710636b0</td></tr>
+<tr>
+<td title='runners.testRunner.runScenario()'><b>runScenario</b><br>Test class: runners.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to navigate to Time Complexity page", "Feature to test DataStructuresPage"</td>
+<td></td>
+<td>0</td>
+<td>runners.testRunner@710636b0</td></tr>
+<tr>
+<td title='runners.testRunner.runScenario()'><b>runScenario</b><br>Test class: runners.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is in a page having an tryEditor with a Run button to test valid python syntax", "Feature to test Array page"</td>
+<td></td>
+<td>1</td>
+<td>runners.testRunner@710636b0</td></tr>
+<tr>
+<td title='runners.testRunner.runScenario()'><b>runScenario</b><br>Test class: runners.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is presented with error message for empty fields below Password textbox", "Feature to test RegisterPage"</td>
+<td></td>
+<td>0</td>
+<td>runners.testRunner@710636b0</td></tr>
+<tr>
+<td title='runners.testRunner.runScenario()'><b>runScenario</b><br>Test class: runners.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verifying RegisterLink in SignInpage", "Feature to test SignInPage"</td>
+<td></td>
+<td>0</td>
+<td>runners.testRunner@710636b0</td></tr>
+<tr>
+<td title='runners.testRunner.runScenario()'><b>runScenario</b><br>Test class: runners.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Graph Representations link", "Feature to test Graph Page"</td>
+<td></td>
+<td>0</td>
+<td>runners.testRunner@710636b0</td></tr>
+<tr>
+<td title='runners.testRunner.runScenario()'><b>runScenario</b><br>Test class: runners.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Graph page", "Feature to test Graph Page"</td>
+<td></td>
+<td>0</td>
+<td>runners.testRunner@710636b0</td></tr>
+<tr>
+<td title='runners.testRunner.runScenario()'><b>runScenario</b><br>Test class: runners.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to signout", "Feature to test Hompage"</td>
+<td></td>
+<td>0</td>
+<td>runners.testRunner@710636b0</td></tr>
+<tr>
+<td title='runners.testRunner.runScenario()'><b>runScenario</b><br>Test class: runners.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is presented with error message for empty fields below Password Confirmation textbox", "Feature to test RegisterPage"</td>
+<td></td>
+<td>1</td>
+<td>runners.testRunner@710636b0</td></tr>
+<tr>
+<td title='runners.testRunner.runScenario()'><b>runScenario</b><br>Test class: runners.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is on Homepage and click Dropdown on Homepage without sign in", "Feature to test Hompage"</td>
+<td></td>
+<td>0</td>
+<td>runners.testRunner@710636b0</td></tr>
+<tr>
+<td title='runners.testRunner.runScenario()'><b>runScenario</b><br>Test class: runners.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User launch home page of an dsalgo project", "Feature to test Hompage"</td>
+<td></td>
+<td>0</td>
+<td>runners.testRunner@710636b0</td></tr>
+<tr>
+<td title='runners.testRunner.runScenario()'><b>runScenario</b><br>Test class: runners.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is on Homepage and click GetStarted link on Homepage without sign in", "Feature to test Hompage"</td>
+<td></td>
+<td>0</td>
+<td>runners.testRunner@710636b0</td></tr>
+<tr>
+<td title='runners.testRunner.runScenario()'><b>runScenario</b><br>Test class: runners.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is on Homepage and click Dropdown on Homepage without sign in", "Feature to test Hompage"</td>
+<td></td>
+<td>0</td>
+<td>runners.testRunner@710636b0</td></tr>
+<tr>
+<td title='runners.testRunner.runScenario()'><b>runScenario</b><br>Test class: runners.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is on Homepage and click GetStarted link on Homepage without sign in", "Feature to test Hompage"</td>
+<td></td>
+<td>0</td>
+<td>runners.testRunner@710636b0</td></tr>
+<tr>
+<td title='runners.testRunner.runScenario()'><b>runScenario</b><br>Test class: runners.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is on Homepage and click Dropdown on Homepage without sign in", "Feature to test Hompage"</td>
+<td></td>
+<td>0</td>
+<td>runners.testRunner@710636b0</td></tr>
+<tr>
+<td title='runners.testRunner.runScenario()'><b>runScenario</b><br>Test class: runners.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to a page having an tryEditor f Basic Operations in Lists page", "Feature to test Array page"</td>
+<td></td>
+<td>1</td>
+<td>runners.testRunner@710636b0</td></tr>
+<tr>
+<td title='runners.testRunner.runScenario()'><b>runScenario</b><br>Test class: runners.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User launches Url", "Feature to test GetStarted page"</td>
+<td></td>
+<td>2</td>
+<td>runners.testRunner@710636b0</td></tr>
+<tr>
+<td title='runners.testRunner.runScenario()'><b>runScenario</b><br>Test class: runners.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is in a page having an tryEditor with a Run button to test valid python syntax", "Feature to test DataStructuresPage"</td>
+<td></td>
+<td>1</td>
+<td>runners.testRunner@710636b0</td></tr>
+<tr>
+<td title='runners.testRunner.runScenario()'><b>runScenario</b><br>Test class: runners.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to a page having an tryEditor from Graph Representations page", "Feature to test Graph Page"</td>
+<td></td>
+<td>0</td>
+<td>runners.testRunner@710636b0</td></tr>
+<tr>
+<td title='runners.testRunner.runScenario()'><b>runScenario</b><br>Test class: runners.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to a page having an tryEditor from Time Complexity page", "Feature to test DataStructuresPage"</td>
+<td></td>
+<td>1</td>
+<td>runners.testRunner@710636b0</td></tr>
+<tr>
+<td title='runners.testRunner.runScenario()'><b>runScenario</b><br>Test class: runners.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is going into SigninPage", "Feature to test Hompage"</td>
+<td></td>
+<td>0</td>
+<td>runners.testRunner@710636b0</td></tr>
+<tr>
+<td title='runners.testRunner.runScenario()'><b>runScenario</b><br>Test class: runners.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Question page from Search the array link", "Feature to test Array page"</td>
+<td></td>
+<td>0</td>
+<td>runners.testRunner@710636b0</td></tr>
+<tr>
+<td title='runners.testRunner.runScenario()'><b>runScenario</b><br>Test class: runners.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User on login page and login with invalid inputs", "Feature to test SignInPage"</td>
+<td></td>
+<td>0</td>
+<td>runners.testRunner@710636b0</td></tr>
+<tr>
+<td title='runners.testRunner.runScenario()'><b>runScenario</b><br>Test class: runners.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is in a page having an tryEditor with a Run button to test invalid python syntax", "Feature to test Array page"</td>
+<td></td>
+<td>0</td>
+<td>runners.testRunner@710636b0</td></tr>
+<tr>
+<td title='runners.testRunner.runScenario()'><b>runScenario</b><br>Test class: runners.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is on Homepage and click GetStarted link on Homepage without sign in", "Feature to test Hompage"</td>
+<td></td>
+<td>0</td>
+<td>runners.testRunner@710636b0</td></tr>
+<tr>
+<td title='runners.testRunner.runScenario()'><b>runScenario</b><br>Test class: runners.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is on Homepage and click Dropdown on Homepage without sign in", "Feature to test Hompage"</td>
+<td></td>
+<td>0</td>
+<td>runners.testRunner@710636b0</td></tr>
+<tr>
+<td title='runners.testRunner.runScenario()'><b>runScenario</b><br>Test class: runners.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is going into RegisterPage", "Feature to test Hompage"</td>
+<td></td>
+<td>0</td>
+<td>runners.testRunner@710636b0</td></tr>
+<tr>
+<td title='runners.testRunner.runScenario()'><b>runScenario</b><br>Test class: runners.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is in a page having an tryEditor with a Run button to test invalid python syntax", "Feature to test Array page"</td>
+<td></td>
+<td>1</td>
+<td>runners.testRunner@710636b0</td></tr>
+<tr>
+<td title='runners.testRunner.runScenario()'><b>runScenario</b><br>Test class: runners.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "RegisterPage Title", "Feature to test RegisterPage"</td>
+<td></td>
+<td>0</td>
+<td>runners.testRunner@710636b0</td></tr>
+<tr>
+<td title='runners.testRunner.runScenario()'><b>runScenario</b><br>Test class: runners.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is on Homepage and click Dropdown on Homepage without sign in", "Feature to test Hompage"</td>
+<td></td>
+<td>0</td>
+<td>runners.testRunner@710636b0</td></tr>
+<tr>
+<td title='runners.testRunner.runScenario()'><b>runScenario</b><br>Test class: runners.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User on login page and login with invalid inputs", "Feature to test SignInPage"</td>
+<td></td>
+<td>0</td>
+<td>runners.testRunner@710636b0</td></tr>
+<tr>
+<td title='runners.testRunner.runScenario()'><b>runScenario</b><br>Test class: runners.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User on login page and login with valid from Excel", "Feature to test SignInPage"</td>
+<td></td>
+<td>1</td>
+<td>runners.testRunner@710636b0</td></tr>
+<tr>
+<td title='runners.testRunner.runScenario()'><b>runScenario</b><br>Test class: runners.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is on Homepage and click GetStarted link on Homepage without sign in", "Feature to test Hompage"</td>
+<td></td>
+<td>0</td>
+<td>runners.testRunner@710636b0</td></tr>
+<tr>
+<td title='runners.testRunner.runScenario()'><b>runScenario</b><br>Test class: runners.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is on Homepage and able to naviagate to Datastructure page", "Feature to test Hompage"</td>
+<td></td>
+<td>0</td>
+<td>runners.testRunner@710636b0</td></tr>
+<tr>
+<td title='runners.testRunner.runScenario()'><b>runScenario</b><br>Test class: runners.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Arrays in Python page", "Feature to test Array page"</td>
+<td></td>
+<td>0</td>
+<td>runners.testRunner@710636b0</td></tr>
+<tr>
+<td title='runners.testRunner.runScenario()'><b>runScenario</b><br>Test class: runners.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is in a page having an tryEditor with a Run button to test valid python syntax", "Feature to test Array page"</td>
+<td></td>
+<td>1</td>
+<td>runners.testRunner@710636b0</td></tr>
+<tr>
+<td title='runners.testRunner.runScenario()'><b>runScenario</b><br>Test class: runners.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is in a page having an tryEditor with a Run button to test valid python syntax", "Feature to test Graph Page"</td>
+<td></td>
+<td>1</td>
+<td>runners.testRunner@710636b0</td></tr>
+<tr>
+<td title='runners.testRunner.runScenario()'><b>runScenario</b><br>Test class: runners.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User logging into Homepage after signing in successfully", "Feature to test Hompage"</td>
+<td></td>
+<td>2</td>
+<td>runners.testRunner@710636b0</td></tr>
+<tr>
+<td title='runners.testRunner.runScenario()'><b>runScenario</b><br>Test class: runners.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is on Homepage and click GetStarted link on Homepage without sign in", "Feature to test Hompage"</td>
+<td></td>
+<td>0</td>
+<td>runners.testRunner@710636b0</td></tr>
+<tr>
+<td title='runners.testRunner.runScenario()'><b>runScenario</b><br>Test class: runners.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to GRAPH Data Structure Page", "Feature to test Graph Page"</td>
+<td></td>
+<td>0</td>
+<td>runners.testRunner@710636b0</td></tr>
+<tr>
+<td title='runners.testRunner.runScenario()'><b>runScenario</b><br>Test class: runners.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is presented with error message for empty fields below Username textbox", "Feature to test RegisterPage"</td>
+<td></td>
+<td>0</td>
+<td>runners.testRunner@710636b0</td></tr>
+<tr>
+<td title='runners.testRunner.runScenario()'><b>runScenario</b><br>Test class: runners.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Data Structure introduction page", "Feature to test DataStructuresPage"</td>
+<td></td>
+<td>0</td>
+<td>runners.testRunner@710636b0</td></tr>
+<tr>
+<td title='runners.testRunner.runScenario()'><b>runScenario</b><br>Test class: runners.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to a page having an tryEditor for Arrays Using List page", "Feature to test Array page"</td>
+<td></td>
+<td>0</td>
+<td>runners.testRunner@710636b0</td></tr>
+<tr>
+<td title='runners.testRunner.runScenario()'><b>runScenario</b><br>Test class: runners.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is on Homepage and click GetStarted link on Homepage without sign in", "Feature to test Hompage"</td>
+<td></td>
+<td>0</td>
+<td>runners.testRunner@710636b0</td></tr>
+<tr>
+<td title='runners.testRunner.runScenario()'><b>runScenario</b><br>Test class: runners.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to a page having an tryEditor from Arrays in Python page", "Feature to test Array page"</td>
+<td></td>
+<td>0</td>
+<td>runners.testRunner@710636b0</td></tr>
+<tr>
+<td title='runners.testRunner.runScenario()'><b>runScenario</b><br>Test class: runners.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is in a page having an tryEditor with a Run button to test invalid python syntax", "Feature to test Graph Page"</td>
+<td></td>
+<td>0</td>
+<td>runners.testRunner@710636b0</td></tr>
+<tr>
+<td title='runners.testRunner.runScenario()'><b>runScenario</b><br>Test class: runners.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is in a page having an tryEditor with a Run button to test invalid python syntax", "Feature to test Graph Page"</td>
+<td></td>
+<td>0</td>
+<td>runners.testRunner@710636b0</td></tr>
+<tr>
+<td title='runners.testRunner.runScenario()'><b>runScenario</b><br>Test class: runners.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is in a page having an tryEditor with a Run button to test invalid python syntax", "Feature to test DataStructuresPage"</td>
+<td></td>
+<td>1</td>
+<td>runners.testRunner@710636b0</td></tr>
+<tr>
+<td title='runners.testRunner.runScenario()'><b>runScenario</b><br>Test class: runners.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is in a page having an tryEditor with a Run button to test invalid python syntax", "Feature to test Array page"</td>
+<td></td>
+<td>0</td>
+<td>runners.testRunner@710636b0</td></tr>
+<tr>
+<td title='runners.testRunner.runScenario()'><b>runScenario</b><br>Test class: runners.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Practice page", "Feature to test Array page"</td>
+<td></td>
+<td>0</td>
+<td>runners.testRunner@710636b0</td></tr>
+<tr>
+<td title='runners.testRunner.runScenario()'><b>runScenario</b><br>Test class: runners.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is in a page having an tryEditor with a Run button to test valid python syntax", "Feature to test Array page"</td>
+<td></td>
+<td>1</td>
+<td>runners.testRunner@710636b0</td></tr>
+<tr>
+<td title='runners.testRunner.runScenario()'><b>runScenario</b><br>Test class: runners.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Arrays Using List page", "Feature to test Array page"</td>
+<td></td>
+<td>0</td>
+<td>runners.testRunner@710636b0</td></tr>
+<tr>
+<td title='runners.testRunner.runScenario()'><b>runScenario</b><br>Test class: runners.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is on Homepage and click GetStarted link on Homepage without sign in", "Feature to test Hompage"</td>
+<td></td>
+<td>1</td>
+<td>runners.testRunner@710636b0</td></tr>
+<tr>
+<td title='runners.testRunner.runScenario()'><b>runScenario</b><br>Test class: runners.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to ARRAY Data Structure Page", "Feature to test Array page"</td>
+<td></td>
+<td>0</td>
+<td>runners.testRunner@710636b0</td></tr>
+<tr>
+<td title='runners.testRunner.runScenario()'><b>runScenario</b><br>Test class: runners.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to a page having an tryEditor from Graph page", "Feature to test Graph Page"</td>
+<td></td>
+<td>0</td>
+<td>runners.testRunner@710636b0</td></tr>
+<tr>
+<td title='runners.testRunner.runScenario()'><b>runScenario</b><br>Test class: runners.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is on Homepage and click Dropdown on Homepage without sign in", "Feature to test Hompage"</td>
+<td></td>
+<td>0</td>
+<td>runners.testRunner@710636b0</td></tr>
+<tr>
+<td title='runners.testRunner.runScenario()'><b>runScenario</b><br>Test class: runners.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User on login page and login with invalid inputs", "Feature to test SignInPage"</td>
+<td></td>
+<td>0</td>
+<td>runners.testRunner@710636b0</td></tr>
+<tr>
+<td title='runners.testRunner.runScenario()'><b>runScenario</b><br>Test class: runners.testRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is in a page having an tryEditor with a Run button to test valid python syntax", "Feature to test Graph Page"</td>
+<td></td>
+<td>1</td>
+<td>runners.testRunner@710636b0</td></tr>
+</table><p>
+</body>
+</html>

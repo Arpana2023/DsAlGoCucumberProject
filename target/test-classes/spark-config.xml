@@ -17,7 +17,7 @@
         <documentTitle>DsAlgo Cucumber Framework</documentTitle>
         
         <!-- report name - displayed at top-nav -->
-        <reportName>Extent Reopots of DsAlgo Cucumber</reportName>
+        <reportName>Extent Reports of DsAlgo Cucumber</reportName>
 
 		<!-- timestamp format -->
 		<timeStampFormat>MMM dd, yyyy HH:mm:ss</timeStampFormat>

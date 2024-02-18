@@ -46,7 +46,7 @@ public class DataStructuresPage extends BaseClass
 	String tryEditorUrl = configReader.getcorrepondingUrl("tryEditor_url");
 	String alertMsg;
 	
-	public DataStructuresPage(WebDriver driver)
+	public DataStructuresPage(WebDriver driver)//java class which is encapsulated
 	{
 		//driver= DriverFactory.getDriver();
 		this.driver=driver;
